@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "GitLab Merge Commit Threshold Guard",
+  "version": "1.0",
+  "description": "Disables merge button if branch is too far behind.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://gitlab.com/*/merge_requests/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
