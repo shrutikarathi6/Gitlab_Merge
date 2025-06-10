@@ -79,7 +79,7 @@
             const response = await fetch(REBASE_API_URL, {
               method: 'PUT',
               headers: {
-                'PRIVATE-TOKEN': 'glpat-gjzi7Am3sZKe25zDxvb4'
+                'PRIVATE-TOKEN': ''
               }
             });
 
